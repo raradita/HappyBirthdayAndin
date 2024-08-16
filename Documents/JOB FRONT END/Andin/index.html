@@ -12,7 +12,7 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
 			rel="stylesheet"
-		/>
+		>
 	</head>
 	<body>
 		<!--Header-->
@@ -25,15 +25,19 @@
 			<div class="container hm_cont">
 				<span class="home_text">
 					<!-- <small>Recently Songs</small> -->
-					<h1 class="">Top Songs</h1>
-					<h3>Pick up your music right where you left off..</h3>
-					<!-- <a class="green_btn" role="button" href="https://spotify-clone-oguz3.web.app/">Play music</a> -->
-					<a class="green_btn" role="button" href="Spotify-songs/songs.html">Play music</a>
+					<h1 class="">Hi Cony &#x1F90D;</h1>
+					<h3>I know you don’t like your birthday, but let me make it up to you yaa sayang</h3>
+<!-- Tombol untuk memulai audio -->
+<a class="green_btn" role="button" onclick="document.getElementById('audioPlayer2').play(); return false;">Play music</a>
+
+<!-- Elemen audio untuk menyimpan file dan kontrol pemutar -->
+<audio id="audioPlayer2" src="./assets/happy-birthday-220024.mp3"></audio>
+
                 </span>
                 <span class="home_cards">
                     <div class="hm_card opacity_anim">
                         <div class="box">
-                            <img src="./assets/b3.jpg" alt="">
+                            <img src="./assets/2.jpg" alt="">
                         </div>
                         <div class="box_details">
 							<div class="play-icon">
@@ -46,12 +50,12 @@
 									</svg>
 								</a>
 							</div>
-							<h2>Ed sheeran</h2>
+							<h2>Hai</h2>					
 						</div>
                     </div>
                     <div class="hm_card opacity_anim-1d">
                         <div class="box">
-                            <img src="./assets/b1.jfif" alt="">
+                            <img src="./assets/1.jpg" alt="">
                         </div>
                         <div class="box_details">
 							<div class="play-icon">
@@ -64,12 +68,12 @@
 									</svg>
 								</a>
 							</div>
-							<h2> Top Songs 2023</h2>
+							<h2> Happy Sweet Seventeen </h2>
 						</div>
                     </div>
                     <div class="hm_card opacity_anim-2d">
                         <div class="box">
-                            <img src="./assets/b5.jfif" alt="">
+                            <img src="./assets/4.jpg" alt="">
                         </div>
                         <div class="box_details">
 							<div class="play-icon">
@@ -82,12 +86,12 @@
 									</svg>
 								</a>
 							</div>
-							<h2>Telugu songs</h2>
+							<h2>ANDIN !!!</h2>
 						</div>
                     </div>
                     <div class="hm_card opacity_anim">
                         <div class="box">
-                            <img src="./assets/b8.jfif" alt="">
+                            <img src="./assets/5.jpg" alt="">
                         </div>
                         <div class="box_details">
 							<div class="play-icon">
@@ -100,12 +104,12 @@
 									</svg>
 								</a>
 							</div>
-							<h2>India Rock</h2>
+							<h2>Wish you</h2>
 						</div>
                     </div>
                     <div class="hm_card opacity_anim-1d">
                         <div class="box">
-                            <img src="./assets/b7.webp" alt="">
+                            <img src="./assets/7.JPG" alt="">
                         </div>
                         <div class="box_details">
 							<div class="play-icon">
@@ -118,12 +122,12 @@
 									</svg>
 								</a>
 							</div>
-							<h2>Dua Lipa</h2>
+							<h2>All the best</h2>
 						</div>
                     </div>
                     <div class="hm_card opacity_anim-2d">
                         <div class="box">
-                            <img src="./assets/b4.jfif" alt="">
+                            <img src="./assets/8.jpg" alt="">
                         </div>
                         <div class="box_details">
 							<div class="play-icon">
@@ -136,7 +140,7 @@
 									</svg>
 								</a>
 							</div>
-							<h2>Love Songs</h2>
+							<h2>Love</h2>
 						</div>
                     </div>
                 </span>
@@ -156,17 +160,17 @@
         <div id="last_listen" class="last_listen">
             <div class="container">
                 <h1>
-Your latest listening trends</h1>
+This is Your Favorite Songs </h1>
                 <div class="ll_row">
                     <span >
                         <div class="ll_card">
                             <span class="txt">
                                 <h5>MOST LISTENED ARTIST</h5>
-                                <h2>Taylor Swift</h2>
+                                <h2>Dewa19 - Satu</h2>
                                 <a href="Spotify-songs/songs.html">PLAY NOW</a>
                             </span>
                             <span class="img">
-                                <img src="./assets/b2.png" alt="">
+                                <img src="./assets/berdua1.jpg" alt="">
                             </span>
                             <span class="bg_filt"></span>
                         </div>
@@ -175,19 +179,28 @@ Your latest listening trends</h1>
                         <div class="ll_card">
                             <span class="txt">
                                 <h5>Trending New</h5>
-                                <h2>Animal - Live</h2>
+                                <h2>Dewa19 - Satu</h2>
                                 <a href="Spotify-songs/songs.html">PLAY NOW</a>
                             </span>
                             <span class="img">
-                                <img src="./assets/b9.jpg" alt="">
+                                <img src="./assets/bedua2.jpg" alt="">
                             </span>
                             <span class="bg_filt"></span>
                         </div>
                     </span>
                 </div>
+    <!-- Tombol untuk memulai lagu pertama -->
+    <a class="green_btn" role="button" onclick="playMusic('audioPlayer1'); return false;">Play Dewa19</a>
+    <!-- Elemen audio untuk lagu pertama -->
+    <audio id="audioPlayer1" src="./assets/Dewa19.mp3"></audio>
             </div>
 		</div>
-		
+		<script>
+			function playMusic(audioId) {
+				var audio = document.getElementById(audioId);
+				audio.play();
+			}
+		</script>		
 		<div class="home_links">
 			<div class="container">
 				<h1 class="title-1">Get the most from Spotify</h1>
@@ -200,7 +213,7 @@ Your latest listening trends</h1>
 				</div>
 				<div class="app_link">
 					<h3 class="subtitle-1">Get our free app</h3>
-					<p class="parag-1"> Listen to your favorite music without any problems. Download the Spotify app to your computer.</p>
+					<p class="parag-1">Listen to your favorite music without any problems. Download the Spotify app to your computer.</p>
 					<a class="a_link" href="">DOWNLOAD DESKTOP APP</a>
 				</div>
 				<div class="web_link">
@@ -219,5 +232,6 @@ Your latest listening trends</h1>
 		<script src="./component/header.js"></script>
 		<script src="./component/footer.js"></script>
 		<script src="./js/main.js"></script>
+		
 	</body>
 </html>

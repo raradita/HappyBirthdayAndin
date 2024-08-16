@@ -27,7 +27,7 @@ class Header extends HTMLElement{
 								<a class="navigation-link" href="./premium.html">Premium</a>
 							</li>
 							<li>
-								<a class="navigation-link" href="./Spotify-songs/songs.html">Songs</a>
+								<a class="navigation-link" href="./Spotify-songs/songs.html">Wish</a>
 							</li>
 							<li>
 								<a class="navigation-link" href="./help.html">Help</a>
